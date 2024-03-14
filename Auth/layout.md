@@ -123,7 +123,6 @@
         </table>
     </div>
 </div>
-
 <style>
     #documentação{ margin-top: -20px; margin-left: -50px; padding: 0px; width: calc(100% + 100px) }
     #documentação>div{ margin-bottom: 30px; background:rgba(225,255,255,0.1); padding: 20px 40px; }
