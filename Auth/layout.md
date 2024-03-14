@@ -1,3 +1,15 @@
+<style>
+    #documentação{ margin-top: -20px; margin-left: -50px; padding: 0px; width: calc(100% + 100px) }
+    #documentação>div{ margin-bottom: 30px; background:rgba(225,255,255,0.1); padding: 20px 40px; }
+    #documentação>div>h2{ margin-top: 0; }
+
+    #documentação table { border-collapse: collapse; width:100%; }
+    #documentação table td, #documentação table th { border: .5px solid #c0c0c0; padding: 10px 40px; }
+    #documentação table thead { border-bottom: 2px solid #c0c0c0; text-transform: uppercase; }
+    #documentação table thead th { font-weight: bold; text-align: center; background:#525252; color:white; font-size:120%; padding: 5px; }
+
+    #documentação code{ padding:10px }
+</style>
 <div id="documentação">
     <div>
         <h1>AuthComponent</h1>
@@ -131,15 +143,4 @@
 
 
 
-<style>
-    #documentação{ margin-top: -20px; margin-left: -50px; padding: 0px; width: calc(100% + 100px) }
-    #documentação>div{ margin-bottom: 30px; background:rgba(225,255,255,0.1); padding: 20px 40px; }
-    #documentação>div>h2{ margin-top: 0; }
 
-    #documentação table { border-collapse: collapse; width:100%; }
-    #documentação table td, #documentação table th { border: .5px solid #c0c0c0; padding: 10px 40px; }
-    #documentação table thead { border-bottom: 2px solid #c0c0c0; text-transform: uppercase; }
-    #documentação table thead th { font-weight: bold; text-align: center; background:#525252; color:white; font-size:120%; padding: 5px; }
-
-    #documentação code{ padding:10px }
-</style>
