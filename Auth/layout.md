@@ -35,9 +35,11 @@
                     </td>
                     <td>
                         <p>Adicine uma tag div com atributo banner</p>
-                        <pre><code>&lt;app-layout-auth&gt
-                            ;&lt;div banner&gt;&lt;/div&gt;
-                        &lt;/app-layout-auth&gt;</code></pre>
+                        <pre><code>
+&lt;app-layout-auth&gt;
+    &lt;div banner&gt;&lt;/div&gt;
+&lt;/app-layout-auth&gt;
+                        </code></pre>
                     </td>
                 </tr>
             </tbody>
