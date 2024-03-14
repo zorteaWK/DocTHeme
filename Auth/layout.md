@@ -15,8 +15,6 @@
                         <code>&lt;app-layout-auth [layout]="full"&gt;&lt;/app-layout-auth&gt;</code>
                     </td>
                     <td>
-                        <p>O componente tocará as bordas do navegador.</p>
-                        <code>&lt;app-layout-auth [layout]="full"&gt;&lt;/app-layout-auth&gt;</code>
                         <p>O componente terá uma margem equivalente ao numero em px.</p>
                         <code>&lt;app-layout-auth [layout]="20"&gt;&lt;/app-layout-auth&gt;</code>
                     </td>
@@ -37,6 +35,8 @@
                     </td>
                     <td>
                         <p>Adicine uma tag div com atributo banner</p>
+                        <p>apenas chamando o componente <b>LayoutAuthComponent<b></p>
+                        <pre><code>&lt;app-layout-auth&gt;&lt;/app-layout-auth&gt;</code></pre>
                         <pre><code>
                             &lt;app-layout-auth&gt; &nbsp;&nbsp;&nbsp;&lt;div banner&gt;&lt;/div&gt; &lt;/app-layout-auth&gt;
                         </code></pre>
