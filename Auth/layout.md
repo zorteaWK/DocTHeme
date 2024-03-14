@@ -38,7 +38,7 @@
                         <pre><code>
                             &lt;app-layout-auth&gt;
                             &nbsp;&nbsp;&nbsp;&lt;div banner&gt;&lt;/div&gt;
-                            &nbsp;&lt;/app-layout-auth&gt;
+                            &lt;/app-layout-auth&gt;
                         </code></pre>
                     </td>
                 </tr>
