@@ -60,7 +60,7 @@
     <div>
         <h2>Posição Banner Lateral</h2>
         <p>O componente <b>LayoutAuthComponent</b> por padrão tem um @input chamdo  <b>ladoBanner</b> que é uma string literal *'direito'|'esquerdo'*</p>
-        <table>
+        <table style="width:100%;">
             <thead><tr><th>DIREITO</th><th>ESQUERDO</th><tr></thead>
             <tbody>
                 <tr>
