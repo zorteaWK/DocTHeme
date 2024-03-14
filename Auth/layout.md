@@ -4,19 +4,19 @@
         <p>o componente <b>AuthComponent</b> utiliza do componente <b>LayoutAuthComponent</b> para renderizar o leu layout, mas <b>nada deve ser alterado dentro do LayoutAuthComponent</b>, tudo é setado dentro do póprio AuthComponent.</p>
     </div>
     <div>
-        <h2>Layout</h2>
-        <p>O componente <b>LayoutAuthComponent</b> por padrão tem um @input chamdo  <b>layout</b> que é uma string literal *"full"* ou um numero;</p>
+        <h2>Margin</h2>
+        <p>O componente <b>LayoutAuthComponent</b> por padrão tem um @input chamdo  <b>margin</b> que é uma string literal *"full"* ou um numero;</p>
         <table>
             <thead><tr><th>Full</th><th>Número</th><tr></thead>
             <tbody>
                 <tr>
                     <td>
                         <p>O componente tocará as bordas do navegador.</p>
-                        <pre><code>&lt;app-layout-auth [layout]="full"&gt;&lt;/app-layout-auth&gt;</code></pre>
+                        <pre><code>&lt;app-layout-auth [margin]="full"&gt;&lt;/app-layout-auth&gt;</code></pre>
                     </td>
                     <td>
                         <p>O componente tocará as bordas do navegador.</p>
-                        <pre><code>&lt;app-layout-auth [layout]="20"&gt;&lt;/app-layout-auth&gt;</code></pre>
+                        <pre><code>&lt;app-layout-auth [margin]="20"&gt;&lt;/app-layout-auth&gt;</code></pre>
                     </td>
                 </tr>
             </tbody>
@@ -37,6 +37,33 @@
                         <p>Adicine uma tag div com atributo banner</p>
                         <pre><code>
 &lt;app-layout-auth&gt;
+    &lt;div <b>banner</b>&gt;&lt;/div&gt;
+&lt;/app-layout-auth&gt;
+                        </code></pre>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h2>Posição Banner Lateral</h2>
+        <p>O componente <b>LayoutAuthComponent</b> por padrão tem um @input chamdo  <b>ladoBanner</b> que é uma string literal *'direito'|'esquerdo'*</p>
+        <table>
+            <thead><tr><th>DIREITO</th><th>ESQUERDO</th><tr></thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>O banner renderizará do lado direito</p>
+                        <pre><code>
+&lt;app-layout-auth <b>ladoBanner="direito"</b>&gt;
+    &lt;div banner&gt;&lt;/div&gt;
+&lt;/app-layout-auth&gt;
+                        </code></pre>
+                    </td>
+                    <td>
+                        <p>O banner renderizará do lado esquerdo</p>
+                        <pre><code>
+&lt;app-layout-auth <b>ladoBanner="esquerdo"</b>&gt;
     &lt;div banner&gt;&lt;/div&gt;
 &lt;/app-layout-auth&gt;
                         </code></pre>
@@ -46,21 +73,50 @@
         </table>
     </div>
     <div>
-        <h2>Banner Rotativo</h2>
-        <p>O banner lateral tem a opção de ser rotativo com infinitos banners</p>
+        <h2>Banner Lateral Estilização</h2>
+        <p>o div com atributo <b>banner</b> pertence ao componente <b>AuthComponent</b> e por isso sua estilização deve ser feita nele, seja por classes, pela tag style ou pelo file <b>auth.component.scss</b></p>
+        <p>Clique aqui para ver todas as clases de estilização</p>
         <table>
-            <thead><tr><th>BANNER ROTATICO</th><tr></thead>
+            <thead><tr><th>EXEMPOS</th><tr></thead>
+            <tbody>
+                <tr><td>
+                        <pre><code>
+&lt;app-layout-auth&gt;
+    &lt;div banner <b>class="color-light"</b>&gt;&lt;/div&gt;
+&lt;/app-layout-auth&gt;
+                        </code></pre>
+                </td></tr>
+                <tr><td>
+                        <pre><code>
+&lt;app-layout-auth&gt;
+    &lt;div banner <b>style="color: #fffff"</b>&gt;&lt;/div&gt;
+&lt;/app-layout-auth&gt;
+                        </code>
+                </td></tr>
+                <tr><td>
+                        <pre><code>
+<b>auth.component.scss</b>
+[banner]: { color: #fffff; }
+                        </code></pre>
+                </td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h2>Banner Rotativo</h2>
+        <p>O banner lateral tem a opção de ser um banner rotativo (carrossel) com infinitos banners. <b>O numero de divs</b> com atributo banner virará <b>automaticamente um banner rotativo</b></p>
+        <table>
+            <thead><tr><th>EXEMPLO</th><tr></thead>
             <tbody>
                 <tr>
                     <td>
-                        <p>O numero de divs com atributo banner virará automaticamente um banner rotativo</p>
-                        <code>
-                            &lt;app-layout-auth&gt;
-                            <br/>&nbsp;&nbsp;&nbsp;&lt;div banner&gt;&lt;/div&gt;
-                            <br/>&nbsp;&nbsp;&nbsp;&lt;div banner&gt;&lt;/div&gt;
-                            <br/>&nbsp;&nbsp;&nbsp;&lt;div banner&gt;&lt;/div&gt;
-                            <br/>&nbsp;&lt;/app-layout-auth&gt;
-                        </code>
+                        <pre><code>
+&lt;app-layout-auth&gt;
+    &lt;div banner&gt;&lt;/div&gt;
+    &lt;div banner&gt;&lt;/div&gt;
+    &lt;div banner&gt;&lt;/div&gt;
+&nbsp;&lt;/app-layout-auth&gt;
+                        </code></pre>
                     </td>
                 </tr>
             </tbody>
