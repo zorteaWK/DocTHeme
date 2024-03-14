@@ -31,15 +31,15 @@
                 <tr>
                     <td>
                         <p>apenas chamando o componente <b>LayoutAuthComponent<b></p>
-                        <code>&lt;app-layout-auth&gt;&lt;/app-layout-auth&gt;</code>
+                        <pre><code>&lt;app-layout-auth&gt;&lt;/app-layout-auth&gt;</code></pre>
                     </td>
                     <td>
                         <p>Adicine uma tag div com atributo banner</p>
-                        <code>
+                        <pre><code>
                             &lt;app-layout-auth&gt;
-                            <br/>&nbsp;&nbsp;&nbsp;&lt;div banner&gt;&lt;/div&gt;
-                            <br/>&nbsp;&lt;/app-layout-auth&gt;
-                        </code>
+                            &nbsp;&nbsp;&nbsp;&lt;div banner&gt;&lt;/div&gt;
+                            &nbsp;&lt;/app-layout-auth&gt;
+                        </code></pre>
                     </td>
                 </tr>
             </tbody>
